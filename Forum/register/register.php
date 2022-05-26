@@ -25,7 +25,7 @@ if ($link == false){
         echo "Логин свободен";
                 $sql = "INSERT INTO sn_users(id, login, password, moder) VALUES (0, '$login', '$password', 0)";
                 $result = mysqli_query($link, $sql);
-                $token = "2122949039:AAF3nM-32LTJSwqBvKUbddt8LMOjWooYWK8";
+                $token = "*********************";
                 $chat_id = "298332074";
                 $txt = "Новый пользователь! '$login'";
                 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
