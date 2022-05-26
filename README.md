@@ -1,2 +1,2 @@
 # messyProjects
-Just my different projects witch I made
+Just my different projects which I made
