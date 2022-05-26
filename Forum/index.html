@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SN</title>
+    <link rel="stylesheet" href="style.css?v=4.3">
+</head>
+<body>
+
+    <!--Поле информации-->
+    <input type="text" id="info" class="hide" readonly>
+
+    <header>
+
+        
+        <div id="log_reg_box">
+            <!--Вход-->
+            <div class="" id="login">
+                <input id="loginLogin" type="text" placeholder="login">
+                <input id="passwordLogin" type="password" placeholder="password">
+                <button onclick="login()">Войти</button>
+                <script src="login/login.js?v=3.2"></script>
+            </div>
+
+            <p id="ili">Или</p>
+
+            <!--Регистрация-->
+            <div class="" id="register">
+                <input id="loginReg" type="text" placeholder="login">
+                <input id="passwordReg" type="text" placeholder="password">
+                <button onclick="register()">Регистрация</button>
+                <script src="register/register.js?v=1.7"></script>
+            </div>
+        </div>
+
+        <div id="php_post_area" style="display: flex;">
+            <!--Создание поста-->
+            <script src="post/post.js?v=4.3"></script>
+        </div>
+    </header>
+
+    <!--Загрузка-->
+    <script src="load/load.js?v=1.5"></script>
+
+    <!--Лента-->
+    <div id="globalWrapper">
+        <div id="container">
+        
+        </div>
+    </div>
+    
+    <script src="script.js??v=2.4"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>Alias</title>
+</head>
+<body>
+
+    <!--Стартовый экран-->
+    <div id="startScreen" class="">
+        
+        <div class="stage">
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+          </div>
+
+        <button class="commonBtn" id="gameStart" onclick="hide(document.querySelector('#startScreen')); show(document.querySelector('#ruleSet'))">Начать игру</button>
+    </div>
+    <!---->
+
+    <!--Экран правил-->
+    <div id="ruleSet" class="hide">
+        <p>Введите кол-во баллов</p>
+        <input type="number" value="50" id="pointInput" placeholder="Введите кол-во баллов">
+        <p>Введите кол-во секунд</p>
+        <input type="number" value="60" id="timerInput" placeholder="Введите кол-во секунд">
+        <button class="commonBtn" onclick="goRules()">Далее</button>
+    </div>
+    <!---->
+
+    <!--Экран создания команд-->
+    <div id="comandsStart" class="start hide">
+        <input type="text" id="comName" placeholder="Введите название команды">
+        <textarea readonly id="comands" placeholder="Список команд"></textarea>
+        <button class="commonBtn" onclick="addCom()">Добавить</button>
+        <button class="commonBtn" onclick="delCom()">Удалить</button>
+        <button class="commonBtn" onclick="goTeam()">Далее</button>
+    </div>
+    <!---->
+
+    <!--Экран выбора словарей-->
+    <div id="dictChoose" class="hide">
+        <button class="commonBtn" id="gameStart" onclick="hide(document.querySelector('#dictChoose')); show(document.querySelector('#customMenu'))">Меню своего словаря</button>
+        <p>Выберите темы</p>
+        <!--Кнопки добавления словарей-->
+        <div>
+
+
+
+            <button class="commonBtn" id="test4Btn" onclick="addList('test4', test4Btn)" style="background-color: rgb(31, 209, 31);">Микс слов</button>
+            <button class="commonBtn" id="brandsBtn" onclick="addList('brands', brandsBtn)" style="background-color: rgb(31, 209, 31);">Бренды и компании</button>
+            <button class="commonBtn" id="customBtn" onclick="addList('custom', customBtn)" style="background-color: rgb(31, 209, 31);">Свой словарь</button>
+
+
+
+        </div>
+        <!---->
+        <button class="commonBtn" onclick="goDict()">Далее</button>
+    </div>
+    <!---->
+    
+    <!--Экран ожидания готовности-->
+    <div id="wait" class="hide">
+        <p>Следующая команда</p>
+        <input type="text" id="curCom" readonly placeholder="current team">
+        <button class="commonBtn" onclick="wordGen(); timer(timeToTimer); show(document.querySelector('#game')); hide(document.querySelector('#wait'));">Вперёд</button>
+        <p>Таблица счёта</p>
+        <textarea readonly id="curCount" placeholder="Счёт"></textarea>
+    </div>
+    <!---->
+
+    <!--Экран игры-->
+    <div id="game" class="hide">
+        <div id="skrit3">
+            <div id="skrit1">
+                <div id="mainGame">
+                    <p>Время</p>
+                    <input type="text" id="timer" readonly placeholder="timer">
+                    </div>
+                    <p>Слово</p>
+            </div>
+            <input type="text" id="mainOutput" readonly placeholder="word">
+            <div id="skrit2">
+                <p>Баллы</p>
+                <input type="text" id="points" readonly placeholder="points">
+                <div id="pointBtn" class="pointBtnCl">
+                    <button style="background-color: red;" class="commonBtn" onclick="wordGen()" id="minBtn">-</button>
+                    <button style="background-color: rgb(31, 209, 31);" class="commonBtn" onclick="wordGen(); plusPoint()" id="plusBtn">+</button>
+                </div>
+            </div>
+        </div>
+        <input type="button" value="Пауза" id="pauseBtn" class="commonBtn" onclick="pause()">
+        <button id="dictRes" onclick="location.reload();hide(document.querySelector('#game'));" class="commonBtn hide">На главную</button>
+    </div>
+    <!---->
+
+    <!--Экран победы-->
+    <div id="win" class="hide">
+        Победила команда
+        <input readonly type="text" id="winner">
+        <button onclick="restart()" class="commonBtn">Рестарт</button>
+        <button onclick="location.reload()" class="commonBtn">На главную</button>
+    </div>
+    <!---->
+
+    <!--Экран кастомного словаря-->
+    <div id="customMenu" class="hide">
+        <textarea readonly style="height: 50vh;" id="allCustomWords" placeholder="Словарь"></textarea>
+        <input type="text" id="customInput" placeholder="Введите слово">
+        <button onclick="addCustom()" class="commonBtn" id="customAdd" style="background-color: rgb(31, 209, 31);">Добавить слово</button>
+        <button onclick="deleteCustom()" class="commonBtn" id="customDelete" style="background-color: red;">Удалить слово</button>
+        <button onclick="hide(document.querySelector('#customMenu')); show(document.querySelector('#dictChoose')); customCheck();" class="commonBtn" id="customDelete">Назад</button>
+    </div>
+    <!---->
+
+</body>
+
+<script src="script.js"></script>
+
+<!--Словари-->
+<script src="dicts/dict_test4.js"></script>
+<script src="dicts/dict_brands.js"></script>
+<!---->
+
+</html>

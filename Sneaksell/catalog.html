@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="items/icons/siteIcon.png" type="image">
+    <link rel="stylesheet" href="style/catalog.css"/>
+    <link rel="stylesheet" href="style/headfoot.css"/>
+    <link rel="stylesheet" href="style/upBtn.css"/>
+    <link rel="stylesheet" href="style/mobile/mobileCatalog.css"/>
+    <title>Sneakell - Каталог</title>
+</head>
+<body>
+
+    <button onclick="topFunction()" id="upBtn" title="Go to top"><img class="upArrow" src="items/icons/upArrow.png" alt="oops..."></button>
+
+    <header>
+        <div class="mainHeader">
+            <img class="logoHeader" src="items/logo/sneakellLogo1Mirror.png" alt="oops...">
+            <div class="textHeader">
+                <a href="index.html">Главная</a>
+                <a href="find.html">Поиск пары</a>
+                <a href="cont.html">Контакты</a>
+                <a href="about.html">О нас</a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </header>
+
+
+    <div class="mobileHeader">
+        <div class="mainHeader">
+            <img id="burgerBtn" src="items/icons/menu.png" alt="oops...">
+            <img class="logoHeader" src="items/logo/sneakellLogo1Mirror.png" alt="oops...">
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="burger hide">
+        <div class="burgerTextWrapper">
+            <a href="index.html">Главная</a>
+            <a href="find.html">Поиск пары</a>
+            <a href="cont.html">Контакты</a>
+            <a href="about.html">О нас</a>
+        </div>
+    </div>
+
+
+<div class="content">
+    <div class="globalWrap">
+        <div class="search">
+            <img class="searchIcon" src="items/icons/premium-icon-search-4024513.png" alt="oops...">
+            <input type="text" id="elastic" placeholder="Поиск">
+        </div>
+        <div id="filBtn"><p>Фильтры</p></div>
+    </div>
+        <div class="filWrapper filWrapperHide" id="filWrapper">
+            <div class="filcol">
+                <p class="pfil">
+                  Бренды:  
+               </p>
+               <p class="pfil">Nike<input type="checkbox" checked id="Nike" value="Nike"/></p>
+               <p class="pfil">Jordan<input type="checkbox" checked id="Jordan" value="Jordan"/></p>
+               <p class="pfil">Adidas<input type="checkbox" checked id="Adidas" value="Adidas"/></p>
+            </div>
+            <div class="filcol2">
+                <p class="pfil">
+                   Размер:                     
+                </p>
+                <p class="pfil">9 US<input type="checkbox" checked id="size9" value="9"/></p>
+                <p class="pfil">10 US<input type="checkbox" checked id="size10" value="10"/></p>
+            </div>
+            <div class="filcol2">
+                <p class="pfil">
+                   Скидки:                    
+                </p>  
+                <p class="pfil">Только по скидке<input type="checkbox" id="sale" value="true"/></p>
+            </div>
+        </div>
+        <div class="sortWrapper">
+            <p class="sortUp">Цена по возрастанию</p>
+            <p class="sortDown">Цена по убыванию</p>
+        </div>
+        <div class="allCards elastic">
+            <div class="card" price="35000" brand="Jordan" size="9" sale="true">
+                <a class="go" href="card_AJ_4_RB.html">
+                <img class="cardImg" src="img/AirJordan4RetroBlue/AirJordan4RetroBluebok.png" alt="oops...">
+                <img class="altImg" src="img/AirJordan4RetroBlue/AirJordan4RetroBluefront.png" alt="oops...">
+                <p class="name">
+                    Air Jordan IV
+                </p>
+                <p class="model">
+                    Retro Blue 9US
+                </p>
+                <p class="oldPrice">
+                    40.000 P
+                </p>
+                <p class="newPrice">
+                    35.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="25000" brand="Jordan" size="9" sale="true">
+                <a class="go" href="card_AJ_1_RG.html">
+                <img class="cardImg" src="img/AirJordan1HighRetroGreen/AirJordan1HighRetroGreenbok.png" alt="oops...">
+                <img class="altImg" src="img/AirJordan1HighRetroGreen/AirJordan1HighRetroGreenfront.png" alt="oops...">
+                <p class="name">
+                    Air Jordan I High
+                </p>
+                <p class="model">
+                    Retro Green 9US
+                </p>
+                <p class="oldPrice">
+                    30.000 P
+                </p>
+                <p class="newPrice">
+                    25.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="400000" brand="Jordan" size="10" sale="false">
+                <a class="go" href="card_AJ_1_TS.html">
+                <img class="cardImg" src="img/AirJordan1HighOGTravisScottBlue/AirJordan1HighOGTravisScottBluebok.png" alt="oops...">
+                <img class="altImg" src="img/AirJordan1HighOGTravisScottBlue/AirJordan1HighOGTravisScottBluefront.png" alt="oops...">
+                <p class="name">
+                    Air Jordan I High
+                </p>
+                <p class="model">
+                    OG TS Blue 10US
+                </p>
+                <p class="price">
+                    400.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="140000" brand="Nike" size="9" sale="false">
+                <a class="go" href="card_NSB_DL_BJ.html">
+                <img class="cardImg" src="img/NikeSBDunkLowBenJerry/NikeSBDunkLowBenJerrybok.png" alt="oops...">
+                <img class="altImg" src="img/NikeSBDunkLowBenJerry/NikeSBDunkLowBenJerryfront.png" alt="oops...">
+                <p class="name">
+                    Nike SB Dunk Low
+                </p>
+                <p class="model">
+                    Ben Jerry 9US
+                </p>
+                <p class="price">
+                    140.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="40000" brand="Jordan" size="10" sale="false">
+                <a class="go" href="card_AJ_1_HR.html">
+                <img class="cardImg" src="img/AirJordan1HighRetroHyperRoyal/AirJordan1HighRetroHyperRoyalbok.png" alt="oops...">
+                <img class="altImg" src="img/AirJordan1HighRetroHyperRoyal/AirJordan1HighRetroHyperRoyalfront.png" alt="oops...">
+                <p class="name">
+                    Air Jordan I High
+                </p>
+                <p class="model">
+                    Hyper Royal 10US
+                </p>
+                <p class="price">
+                    40.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="65000" brand="Jordan" size="9" sale="false">
+            <a class="go" href="card_AJ_4_RP.html">
+                <img class="cardImg" src="img/AirJordan4RetroPurple/AirJordan4RetroPurplebok.png" alt="oops...">
+                <img class="altImg" src="img/AirJordan4RetroPurple/AirJordan4RetroPurplefront.png" alt="oops...">
+                <p class="name">
+                    Air Jordan IV
+                </p>
+                <p class="model">
+                    Retro Purple 9US
+                </p>
+                <p class="price">
+                    65.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="35000" brand="Nike" size="10" sale="true">
+                <a class="go" href="card_N_DL_UB.html">
+                <img class="cardImg" src="img/NikeDunkLowUniversityBlue/NikeDunkLowUniversityBluebok.png" alt="oops...">
+                <img class="altImg" src="img/NikeDunkLowUniversityBlue/NikeDunkLowUniversityBluefront.png" alt="oops...">
+                <p class="name">
+                    Nike Dunk Low
+                </p>
+                <p class="model">
+                    University Blue 10US
+                </p>
+                <p class="oldPrice">
+                    40.000 P
+                </p>
+                <p class="newPrice">
+                    35.000 P
+                </p>
+                </a>
+            </div>
+            <div class="card" price="40000" brand="Adidas" size="10" sale="true">
+                <a class="go" href="card_AY_500_DR.html">
+                <img class="cardImg" src="img/AdidasYeezy500/500bok.png" alt="oops...">
+                <img class="altImg" src="img/AdidasYeezy500/500front.png" alt="oops...">
+                <p class="name">
+                    Adidas Yeezy 
+                </p>
+                <p class="model">
+                    Desert Rat 500 10US
+                </p>
+                <p class="oldPrice">
+                    50.000 P
+                </p>
+                <p class="newPrice">
+                    40.000 P
+                </p>
+                </a>
+            </div>
+        </div>
+</div>
+
+<footer>
+    <div class="line"></div>
+    <div class="mainFooter">
+         <div class="iconsSocials">
+            <a href="https://www.instagram.com/6ondawave9/"><img class="socials" src="items/icons/instagram.png" alt="oops..."></a>
+            <a href="https://vk.com/6ondawave9"><img class="socials" src="items/icons/vk.png" alt="oops..."></a>
+            <a href="https://t.me/twitchondawave"><img class="socials" src="items/icons/telegram.png" alt="oops..."></a>
+        </div>
+        <div class="textFooter">
+            <div class="col1">
+                <a href="about.html"class="about">О нас</a>
+                <a href="about.html">Оплата</a>
+                <a href="about.html">Возврат</a>
+            </div>
+            <div class="col2">
+                <a href="about.html">FAQ</a>
+                <a href="about.html">Политика конфидециальности</a>
+            </div>
+        </div>
+        <div class="adress">
+            <div class="col3">
+                <p>© SNEAKELL</p>
+                <p>Москва</p>
+                <p>Чертановская 24к3</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+<div class="mobileFooter">
+    <div class="line"></div>
+    <div class="mainFooter">
+         <div class="iconsSocials">
+            <a href="https://www.instagram.com/6ondawave9/"><img class="socials" src="items/icons/instagram.png" alt="oops..."></a>
+            <a href="https://vk.com/6ondawave9"><img class="socials" src="items/icons/vk.png" alt="oops..."></a>
+            <a href="https://t.me/twitchondawave"><img class="socials" src="items/icons/telegram.png" alt="oops..."></a>
+        </div>
+        <div class="textFooter">
+            <div class="col1">
+                <a href="about.html"class="about">О нас</a>
+                <a href="about.html">Оплата</a>
+                <a href="about.html">Возврат</a>
+            </div>
+            <div class="col2">
+                <a href="about.html">FAQ</a>
+                <a href="about.html">Политика конфидециальности</a>
+            </div>
+        </div>
+        <div class="adress">
+            <div class="col3">
+                <p>© SNEAKELL</p>
+                <p>Москва</p>
+                <p>Чертановская 24к3</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script>
+    let fil = document.querySelector('#filWrapper');
+    document.querySelector('#filBtn').onclick = function(){
+        if (fil.classList.contains('filWrapperHide')) {
+        fil.classList.remove('filWrapperHide');
+    }
+    else {
+        fil.classList.add('filWrapperHide');
+    }
+    };
+</script>
+<script src="up.js"></script>
+<script src="burger.js"></script>
+<script src="search.js"></script>
+<script src="filter.js"></script>
+<script src="sort.js"></script>
+</html>

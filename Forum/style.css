@@ -1,0 +1,206 @@
+
+/*----------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size:100%;
+    line-height:1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h1,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: rgb(226, 248, 226);
+}
+
+#info {
+    border: none;
+    background-color: white;
+    width: 100%;
+    cursor: default;
+    color: red;
+}
+
+header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+}
+
+#ili {
+    margin-right: 5px;
+    color: rgb(84, 114, 84);
+    font-weight: bold;
+}
+
+.php_post_area {
+    width: 100%;
+}
+
+#log_reg_box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.createPost {
+    display: flex;
+    align-items: center;
+}
+button, label {
+    margin-right: 5px;
+    border:rgb(84, 114, 84) solid 2px;
+    border-radius: 10px;
+    color: rgb(84, 114, 84);
+    font-weight: bold;
+    padding: 5px;
+    background-color: white;
+}
+label {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+label:hover {
+    cursor: pointer;
+}
+textarea, input {
+    padding: 5px;
+    border:rgb(84, 114, 84) solid 2px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+textarea {
+    transition: all ease-in-out 0.3s;
+    height: 30px;
+    width: 191px;
+    overflow: hidden;
+    resize: none;
+}
+
+textarea:focus {
+    overflow: visible;
+    height: 200px;
+    width: 500px;
+}
+
+#userBlock {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#logOut {
+    margin-right: 10px;
+    border: none;
+    font-weight: 500;
+}
+
+#currentUser {
+    color: rgb(84, 114, 84);
+    font-weight: bold;
+}
+#globalWrapper {
+    display: flex;
+    justify-content: center;
+}
+#container {
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.post_login::before {
+    content: '@';
+}
+.post_login {
+    color: rgb(84, 114, 84);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.post_text {
+    /*word-break: break-all;*/
+    width: 100%;
+    line-height: 23px;
+}
+.post_img {
+    margin-top: 10px;
+    align-self: center;
+}
+.post_img_img {
+    max-height: 700px;
+    max-width: 100%;
+}
+.hide {
+    display: none;
+}
+
+@media (max-width:1150px) {
+    #log_reg_box {
+        display: flex;
+        flex-direction: column;
+    }
+    #login {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    #register {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    #ili {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #php_post_area {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #userBlock {
+        margin-bottom: 10px;
+    }
+}

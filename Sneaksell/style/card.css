@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "RubikLight"; 
+    src: url("../items/content/Rubik-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+@font-face {
+    font-family: "RubikSemiBold"; 
+    src: url("../items/content/Rubik-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+.mobileHeader {
+    display: none;
+}
+
+.mobileFooter {
+    display: none;
+}
+
+a {
+    color: #000 !important;
+}
+    
+
+.swiper-slide, .swiper-slide-duplicate, .swiper-slide-duplicate-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderImg {
+    width: 430px;
+    height: 430px;
+}
+
+.swiper {
+    width: 550px;
+    height: 550px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: black;
+}
+
+:root {
+    --swiper-theme-color: black !important; 
+}
+
+.content {
+    min-height: calc(100vh - 194px - 50px - 25px);
+    width: calc(100% - 150px);
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.name {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family: RubikSemiBold;
+    font-size: 24px;
+}
+
+.model {
+    margin-bottom: 25px;
+    font-family: RubikLight;
+    font-size: 24px;
+}
+
+.price {
+    margin-bottom: 25px;
+    font-family: RubikSemiBold;
+    font-size: 24px;
+}
+
+.aboutSneak {
+    font-family: RubikLight;
+    font-size: 18px;
+}
+
+.aboutInfo {
+    margin-bottom: 25px;
+}
+
+.order {
+    background-color: #cccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.inputArea {
+    display: flex;
+    justify-content: flex-start;
+    font-family: RubikLight;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tits {
+    margin-right: 10px;
+}
+
+select, input, button {
+    margin-left: auto;
+    font-family: RubikLight;
+    font-size: 18px;
+    background-color: #d6d6d6;
+    border: black solid 1px;
+}
+
+button {
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+#order {
+    padding: 10px;
+    cursor: pointer;
+    font-family: RubikSemiBold;
+    font-size: 18px;
+    background-color: #d6d6d6;
+    align-self: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size:100%;
+    line-height:1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h1,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}

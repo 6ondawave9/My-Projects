@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "RubikLight"; 
+    src: url("../items/content/Rubik-Light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+@font-face {
+    font-family: "RubikSemiBold"; 
+    src: url("../items/content/Rubik-SemiBold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+
+
+    .mobileHeader {
+        display: none;
+    }
+    
+    .mobileFooter {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+
+a {
+    color: #000 !important;
+}
+    
+
+.content {
+    min-height: calc(100vh - 194px - 50px - 25px);
+    width: calc(100% - 150px);
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+iframe {
+    width: 75%;
+}
+
+.pAbout {
+    font-size: 18px;
+    font-family: RubikLight;
+    margin-bottom: 25px;
+}
+
+span {
+    font-family: RubikSemiBold;
+}
+
+form {
+    width: 25%;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+form, input, button {
+    font-size: 18px;
+    font-family: RubikLight;
+}
+
+input, button {
+    background-color: #cccc;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size:100%;
+    line-height:1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h1,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
