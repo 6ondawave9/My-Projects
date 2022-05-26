@@ -6,7 +6,7 @@
 $imya = $_POST['imya'];
 $milo = $_POST['milo'];
 $mes = $_POST['mes'];
-$token = "2122949039:AAF3nM-32LTJSwqBvKUbddt8LMOjWooYWK8";
+$token = "**********************";
 $chat_id = "298332074";
 $arr = array(
   'Имя: ' => $imya,
